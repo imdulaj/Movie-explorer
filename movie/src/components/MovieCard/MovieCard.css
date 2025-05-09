@@ -1,6 +1,24 @@
 .movie-card {
+  position: relative;
+  width: 250px;
+  height: 350px;
+  overflow: hidden;
+  border-radius: 12px;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  align-items: flex-end;
+  padding: 16px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  height: 50%;
+}
+
+.movie-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0));
+  z-index: 0;
 }
 
 .movie-card.hovered {
@@ -8,15 +26,11 @@
   box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
 }
 
-.movie-poster {
-  transition: transform 0.3s ease;
-}
-
-.movie-card.hovered .movie-poster {
-  transform: scale(1.05);
-}
-
 .movie-title {
+  position: relative;
+  z-index: 1;
+  font-size: 1.2rem;
+  font-weight: bold;
   transition: color 0.3s ease;
 }
 
@@ -25,8 +39,17 @@
 }
 
 .favorite-button {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: rgba(0,0,0,0.4);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 8px;
+  cursor: pointer;
   transition: transform 0.2s ease, background-color 0.2s ease;
-  z-index: 1;
+  z-index: 2;
 }
 
 .favorite-button:hover {
@@ -35,6 +58,11 @@
 
 .favorite-button.is-favorite {
   background-color: rgba(255, 245, 245, 0.9) !important;
+  color: red;
+}
+
+.movie-poster {
+  display: none; /* background-image is used instead */
 }
 
 .movie-overlay {
