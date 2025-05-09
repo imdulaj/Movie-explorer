@@ -1,0 +1,30 @@
+.login-container {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.login-form-container {
+  animation-delay: 0.2s;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+}
+
+.login-form {
+  margin-top: 16px;
+}
+
+.form-input {
+  transition: transform 0.2s ease;
+}
+
+.form-input:focus-within {
+  transform: translateY(-2px);
+}
+
+.login-button {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.login-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}

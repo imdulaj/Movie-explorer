@@ -1,0 +1,42 @@
+.movie-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 50%;
+}
+
+.movie-card.hovered {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+.movie-poster {
+  transition: transform 0.3s ease;
+}
+
+.movie-card.hovered .movie-poster {
+  transform: scale(1.05);
+}
+
+.movie-title {
+  transition: color 0.3s ease;
+}
+
+.movie-card:hover .movie-title {
+  color: #3b82f6;
+}
+
+.favorite-button {
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  z-index: 1;
+}
+
+.favorite-button:hover {
+  transform: scale(1.1);
+}
+
+.favorite-button.is-favorite {
+  background-color: rgba(255, 245, 245, 0.9) !important;
+}
+
+.movie-overlay {
+  pointer-events: none;
+}

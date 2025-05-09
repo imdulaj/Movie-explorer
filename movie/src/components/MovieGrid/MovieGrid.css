@@ -1,0 +1,25 @@
+.movie-grid-container {
+  margin-bottom: 32px;
+}
+
+.movie-grid-title {
+  animation: fadeIn 0.5s ease;
+}
+
+.movie-grid-item {
+  opacity: 0;
+}
+
+.load-more-button {
+  transition: transform 0.2s ease;
+}
+
+.load-more-button:hover {
+  transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+  .movie-grid {
+    margin-top: 8px;
+  }
+}

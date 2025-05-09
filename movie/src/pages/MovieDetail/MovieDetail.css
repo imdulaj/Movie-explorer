@@ -1,0 +1,80 @@
+.movie-detail-container {
+  margin-top: 16px;
+  margin-bottom: 32px;
+}
+
+.poster-container {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.poster-container:hover {
+  transform: scale(1.02);
+}
+
+.movie-poster {
+  width: 100%;
+  display: block;
+}
+
+.back-button {
+  transition: transform 0.2s ease;
+}
+
+.back-button:hover {
+  transform: translateX(-4px);
+}
+
+.favorite-button {
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.favorite-button:hover {
+  transform: translateY(-2px);
+}
+
+.trailer-button:hover {
+  transform: translateY(-2px);
+}
+
+.overview {
+  line-height: 1.7;
+}
+
+.genre-chip {
+  transition: all 0.2s ease;
+}
+
+.genre-chip:hover {
+  background-color: rgba(59, 130, 246, 0.1);
+  transform: translateY(-2px);
+}
+
+.cast-container {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(155, 155, 155, 0.5) transparent;
+}
+
+.cast-container::-webkit-scrollbar {
+  height: 6px;
+}
+
+.cast-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.cast-container::-webkit-scrollbar-thumb {
+  background-color: rgba(155, 155, 155, 0.5);
+  border-radius: 20px;
+}
+
+.cast-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cast-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
